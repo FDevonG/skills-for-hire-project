@@ -1,0 +1,17 @@
+.hero{
+	position: relative;
+	@include e(image){
+		width: 100%;
+	}
+	
+	@include e(text){
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -100%);
+		color: $white;
+		text-align: center;
+		font-size: px-to-rem(25px);
+		text-shadow: 3px 3px 2px $shadow-color;
+	}
+}

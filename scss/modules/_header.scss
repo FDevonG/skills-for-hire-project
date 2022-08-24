@@ -1,0 +1,15 @@
+.header {
+	background-color: $main-color;
+	color: $white;
+	padding: 0 20px;
+	@include flexy($just: space-between, $align: center);
+	box-shadow: 0 5px 15px 15px $shadow-color;
+	.hamburger-menu,
+	.logo{
+		max-height: px-to-rem(30px);
+	}
+	
+	.hamburger-menu{
+		cursor: pointer;
+	}
+}
