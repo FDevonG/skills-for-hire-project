@@ -4,7 +4,7 @@
 	height: 100%;
 	margin:0;
 	transform: translateX(-250px);
-	transition: transform .6s ease-in-out;
+	transition: transform $animation-duration ease-in-out;
 }
 
 .transform-nav{
@@ -19,17 +19,23 @@
 	margin:0;
 	
 	@include e(item){
-		
+		transition: background-color $animation-duration ease-in-out;
+		padding: 10px;
 		a{
-			display:inline-block;
-			padding: 10px;
-			margin: 10px 35px;
 			font-size: px-to-rem(18px);
 			color: white;
 			text-decoration: none;
+			transition: color $animation-duration ease-in-out;
 			@include mq(){
 				font-size: px-to-rem(22px);
 			}
+		}
+
+		&:hover{
+			background-color: $white;
+		}
+		&:hover a{
+			color: $main-color;
 		}
 	}
 }

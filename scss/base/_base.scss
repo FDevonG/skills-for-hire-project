@@ -26,6 +26,9 @@ h1{
 h2{
 	text-align: center;
 	font-size: px-to-rem(26px);
+	@include mq(){
+		font-size: px-to-rem(40px);
+	}
 }
 
 h3{
@@ -33,6 +36,16 @@ h3{
 	text-decoration: underline;
 	margin-bottom: 0;
 	font-size: px-to-rem(22px);
+	@include mq(){
+		font-size: px-to-rem(30px);
+	}
+}
+
+h4 {
+	font-size: px-to-rem(18px);
+	@include mq(){
+		font-size: px-to-rem(20px);
+	}
 }
 
 h1,
