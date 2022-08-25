@@ -5,4 +5,13 @@ $shadow-color: rgba(0,0,0, .8);
 
 $base-font-size: 16px;
 
-$max-width: px-to-rem(1000px);
+$max-width: 1000px;
+
+$font-url--google: "https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@700&display=swap";
+$primary-font: 'Roboto Slab', serif;
+$secondary-font: 'Roboto', sans-serif;
+
+$font-weights: (
+    'normal': 400,
+    'bold' : 800,
+);

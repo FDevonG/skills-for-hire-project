@@ -1,16 +1,46 @@
+@if variable-exists(font-url--google){
+	@import url($font-url--google);
+}
+
 * {
 	box-sizing: border-box;
 }
 
+body{
+	font-family: $primary-font;
+	line-height: 1.5;
+	font-weight: map-get($font-weights, 'normal');
+}
+
+header {
+	z-index:100;
+}
+
 h1{
 	font-size:px-to-rem(18px);
+	@include mq(){
+		font-size:px-to-rem(24px);
+	}
 }
 
 h2{
 	text-align: center;
-	font-size: px-to-rem(20px);
+	font-size: px-to-rem(26px);
 }
 
 h3{
 	color:$city-text-color;
+	text-decoration: underline;
+	margin-bottom: 0;
+	font-size: px-to-rem(22px);
+}
+
+h1,
+h2,
+h3,
+h4,
+.hero__text{
+	font-family: $secondary-font;
+	font-weight: map-get($font-weights, 'bold');
+	letter-spacing: 1.5px;
 }

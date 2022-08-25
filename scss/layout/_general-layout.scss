@@ -1,9 +1,10 @@
 .site-wrapper{
-//	@include flexy($dir: column);
+	position: relative;
 }
 .content-wrapper{
-	position: relative;
-	max-width: px-to-rem(1000px);
-	margin: auto;
-	z-index: -1;
+	margin: 0 5%;
+	@include mq(){
+		max-width: $max-width;
+		margin:0 auto;
+	}
 }

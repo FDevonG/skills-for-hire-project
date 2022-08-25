@@ -1,5 +1,10 @@
 .hero{
 	position: relative;
+	z-index: -1;
+	@include mq(){
+		max-width: $max-width;
+		margin:auto;
+	}
 	@include e(image){
 		width: 100%;
 	}
@@ -13,5 +18,8 @@
 		text-align: center;
 		font-size: px-to-rem(25px);
 		text-shadow: 3px 3px 2px $shadow-color;
+		@include mq(){
+			font-size: px-to-rem(50px);
+		}
 	}
 }
