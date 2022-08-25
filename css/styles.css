@@ -604,8 +604,7 @@ h4,
 }
 
 /* line 1, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_main-content.scss */
-.event-date,
-.event-duration {
+.event-info {
   margin: 5px 0 0;
 }
 
