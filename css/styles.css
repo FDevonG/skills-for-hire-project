@@ -454,7 +454,7 @@ h4,
 }
 
 /* line 62, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/base/_base.scss */
-section:nth-of-type(2) {
+section:nth-child(2n+1) {
   margin-top: 100px;
 }
 
@@ -526,12 +526,12 @@ section:nth-of-type(2) {
   transition: transform 0.6s ease-in-out;
 }
 
-/* line 10, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_nav.scss */
+/* line 9, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_nav.scss */
 .transform-nav {
   transform: translateX(0);
 }
 
-/* line 14, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_nav.scss */
+/* line 13, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_nav.scss */
 .nav {
   min-height: 100%;
   background-color: #274a88;
@@ -546,7 +546,7 @@ section:nth-of-type(2) {
   padding: 10px 100px 10px 20px;
 }
 
-/* line 24, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_nav.scss */
+/* line 23, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_nav.scss */
 .nav__item a {
   font-size: 1.125rem;
   color: white;
@@ -555,18 +555,18 @@ section:nth-of-type(2) {
 }
 
 @media screen and (min-width: 1400px) {
-  /* line 24, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_nav.scss */
+  /* line 23, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_nav.scss */
   .nav__item a {
     font-size: 1.375rem;
   }
 }
 
-/* line 34, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_nav.scss */
+/* line 33, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_nav.scss */
 .nav__item:hover {
   background-color: #fafafa;
 }
 
-/* line 37, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_nav.scss */
+/* line 36, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_nav.scss */
 .nav__item:hover a {
   color: #274a88;
 }
