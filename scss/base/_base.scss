@@ -42,9 +42,10 @@ h3{
 }
 
 h4 {
-	font-size: px-to-rem(18px);
+	font-size: px-to-rem(20px);
+	margin-bottom: 0;
 	@include mq(){
-		font-size: px-to-rem(20px);
+		font-size: px-to-rem(25px);
 	}
 }
 
@@ -56,4 +57,8 @@ h4,
 	font-family: $secondary-font;
 	font-weight: map-get($font-weights, 'bold');
 	letter-spacing: 1.5px;
+}
+
+section:nth-of-type(2){
+	margin-top:100px;
 }

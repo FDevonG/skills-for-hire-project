@@ -431,17 +431,18 @@ h3 {
 
 /* line 44, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/base/_base.scss */
 h4 {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 1400px) {
   /* line 44, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/base/_base.scss */
   h4 {
-    font-size: 1.25rem;
+    font-size: 1.5625rem;
   }
 }
 
-/* line 51, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/base/_base.scss */
+/* line 52, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/base/_base.scss */
 h1,
 h2,
 h3,
@@ -450,6 +451,11 @@ h4,
   font-family: "Roboto", sans-serif;
   font-weight: 800;
   letter-spacing: 1.5px;
+}
+
+/* line 62, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/base/_base.scss */
+section:nth-of-type(2) {
+  margin-top: 100px;
 }
 
 /* line 1, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/layout/_general-layout.scss */
@@ -537,7 +543,7 @@ h4,
 /* line 10, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/utilities/_mixins.scss */
 .nav__item {
   transition: background-color 0.6s ease-in-out;
-  padding: 10px;
+  padding: 10px 100px 10px 20px;
 }
 
 /* line 24, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_nav.scss */
@@ -606,6 +612,11 @@ h4,
 /* line 1, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_main-content.scss */
 .event-info {
   margin: 5px 0 0;
+}
+
+/* line 5, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_main-content.scss */
+.summary-text {
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
