@@ -490,29 +490,41 @@ section:nth-child(2n+1) {
 
 /* line 8, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_header.scss */
 .header .hamburger-menu {
-  height: 30px;
+  fill: #fafafa;
+  height: 25px;
+  transition: background-color 0.6s ease-in-out, fill 0.6s ease-in-out;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 @media screen and (min-width: 1400px) {
   /* line 8, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_header.scss */
   .header .hamburger-menu {
-    height: 50px;
+    height: 45px;
+    padding: 10px;
   }
 }
 
-/* line 15, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_header.scss */
+/* line 18, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_header.scss */
+.header .hamburger-menu:hover, .header .hamburger-menu:focus {
+  background-color: #fafafa;
+  fill: #274a88;
+  outline: none;
+}
+
+/* line 26, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_header.scss */
 .header .logo {
   height: 50px;
 }
 
 @media screen and (min-width: 1400px) {
-  /* line 15, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_header.scss */
+  /* line 26, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_header.scss */
   .header .logo {
     height: 75px;
   }
 }
 
-/* line 22, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_header.scss */
+/* line 33, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_header.scss */
 .header .hamburger-menu {
   cursor: pointer;
 }
@@ -524,14 +536,16 @@ section:nth-child(2n+1) {
   margin: 0;
   transform: translateX(-300px);
   transition: transform 0.6s ease-in-out;
+  display: none;
 }
 
-/* line 9, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_nav.scss */
+/* line 10, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_nav.scss */
 .transform-nav {
+  display: initial;
   transform: translateX(0);
 }
 
-/* line 13, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_nav.scss */
+/* line 15, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_nav.scss */
 .nav {
   min-height: 100%;
   background-color: #274a88;
@@ -543,32 +557,38 @@ section:nth-child(2n+1) {
 /* line 10, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/utilities/_mixins.scss */
 .nav__item {
   transition: background-color 0.6s ease-in-out;
-  padding: 10px 100px 10px 20px;
+  display: flex;
+  margin: 10px 0;
 }
 
-/* line 23, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_nav.scss */
+/* line 26, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_nav.scss */
+.nav__item:first-child {
+  margin-top: 0;
+}
+
+/* line 29, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_nav.scss */
 .nav__item a {
   font-size: 1.125rem;
   color: white;
   text-decoration: none;
   transition: color 0.6s ease-in-out;
+  min-width: 100%;
+  padding: 10px 100px 10px 20px;
+  flex: 1;
 }
 
 @media screen and (min-width: 1400px) {
-  /* line 23, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_nav.scss */
+  /* line 29, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_nav.scss */
   .nav__item a {
     font-size: 1.375rem;
   }
 }
 
-/* line 33, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_nav.scss */
-.nav__item:hover {
+/* line 40, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_nav.scss */
+.nav__item a:hover, .nav__item a:focus {
   background-color: #fafafa;
-}
-
-/* line 36, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_nav.scss */
-.nav__item:hover a {
   color: #274a88;
+  outline: none;
 }
 
 /* line 1, ../../../../../Users/devongillis/Projects/Websites/skills-for-hire-project-02/scss/modules/_hero-image.scss */

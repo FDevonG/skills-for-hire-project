@@ -4,9 +4,11 @@
 	margin:0;
 	transform: translateX(-300px);
 	transition: transform $animation-duration ease-in-out;
+	display: none;
 }
 
 .transform-nav{
+	display: initial;
 	transform: translateX(0);
 }
 
@@ -19,22 +21,30 @@
 	
 	@include e(item){
 		transition: background-color $animation-duration ease-in-out;
-		padding: 10px 100px 10px 20px;
+		@include flexy();
+		margin: 10px 0;
+		&:first-child{
+			margin-top: 0;
+		}
 		a{
 			font-size: px-to-rem(18px);
 			color: white;
 			text-decoration: none;
 			transition: color $animation-duration ease-in-out;
+			min-width: 100%;
+			padding: 10px 100px 10px 20px;
+			flex:1;
 			@include mq(){
 				font-size: px-to-rem(22px);
 			}
+			&:hover,
+			&:focus{
+				background-color: $white;
+				color: $main-color;
+				outline:none;
+			}
 		}
 
-		&:hover{
-			background-color: $white;
-		}
-		&:hover a{
-			color: $main-color;
-		}
+		
 	}
 }
