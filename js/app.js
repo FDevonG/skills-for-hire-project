@@ -10,28 +10,25 @@ function menu(){
     if(nav.classList.contains('transform-nav')){
         nav.classList.remove('transform-nav');
         window.onscroll = () => {};
-        navDisplay(false);
 ;    } else {
         nav.classList.add('transform-nav');
         disableScrolling();
-        navDisplay(true);
     }
+    navDisplay();
 }
 
 /**
+ * Hides and shows the navigation menu
  * 
- * @param {Boolean} navSwitch - dictates wether we are hiding or showing the navigation
  */
-function navDisplay(navSwitch) {
-    if(navSwitch){
-        setTimeout(() => {
-            document.querySelector('#nav').setAttribute('display', 'initial');;
-        }, 6000);
-    } else {
-        setTimeout(() => {
-            document.querySelector('#nav').setAttribute('display', 'none');;
-        }, 6000);
-    }
+function navDisplay() {
+    setTimeout(() => {
+        if(document.querySelector('#nav').getAttribute('display') === 'none'){
+            document.querySelector('#nav').setAttribute('display', 'initial');
+        } else {
+            document.querySelector('#nav').setAttribute('display', 'none');
+        }
+    }, 6000);
 }
 
 /**

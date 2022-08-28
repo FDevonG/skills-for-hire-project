@@ -4,6 +4,28 @@
 	@include flexy($just: center, $align: center);
 }
 
+.ham-men{
+	fill: $white;
+	width: 35px;
+	height: 35px;
+	transition: background-color $animation-duration ease-in-out, fill $animation-duration ease-in-out;
+	border-radius: $rounded-corners;
+	padding: 5px;
+	cursor: pointer;
+
+	@include mq(){
+		height: 50px;
+		width: 50px;
+		padding: 10px;
+	}
+	&:hover,
+	&:focus{
+		background-color: $white;
+		fill: $main-color;
+		outline: none;
+	}
+}
+
 .nav {
 	min-height: 100vh;
 	background-color: $main-color;

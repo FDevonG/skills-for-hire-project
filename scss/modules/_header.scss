@@ -6,24 +6,7 @@
 	box-shadow: 0 5px 15px 15px $shadow-color;
 	z-index:10;
 	position: relative;
-	.hamburger-menu{
-		fill: $white;
-		height: 25px;
-		transition: background-color $animation-duration ease-in-out, fill $animation-duration ease-in-out;
-		padding: 5px;
-		border-radius: $rounded-corners;
-		@include mq(){
-			height: 45px;
-			padding: 10px;
-		}
-		&:hover,
-		&:focus{
-			background-color: $white;
-			fill: $main-color;
-			outline: none;
-		}
-	}
-
+	
 	.logo{
 		height: 50px;
 		@include mq(){
@@ -31,7 +14,4 @@
 		}
 	}
 	
-	.hamburger-menu{
-		cursor: pointer;
-	}
 }
