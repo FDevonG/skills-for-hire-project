@@ -1,28 +1,25 @@
 .main-nav{
-	position: absolute;
 	height: 100%;
 	margin:0;
-	transform: translateX(-300px);
-	transition: transform $animation-duration ease-in-out;
-	display: none;
-}
-
-.transform-nav{
-	display: initial;
-	transform: translateX(0);
+	@include flexy($just: center, $align: center);
 }
 
 .nav {
-	min-height: 100%;
+	min-height: 100vh;
 	background-color: $main-color;
 	list-style:none;
 	padding: 0;
 	margin:0;
-	
+	position: absolute;
+	left:0;
+	top:100%;
+	transform: translateX(-300px);
+	transition: transform $animation-duration ease-in-out;
+
 	@include e(item){
-		transition: background-color $animation-duration ease-in-out;
 		@include flexy();
-		margin: 10px 0;
+		margin: 0;
+		
 		&:first-child{
 			margin-top: 0;
 		}
@@ -30,7 +27,7 @@
 			font-size: px-to-rem(18px);
 			color: white;
 			text-decoration: none;
-			transition: color $animation-duration ease-in-out;
+			transition: color $animation-duration ease-in-out, background-color $animation-duration ease-in-out;
 			min-width: 100%;
 			padding: 10px 100px 10px 20px;
 			flex:1;
@@ -47,4 +44,8 @@
 
 		
 	}
+}
+
+.transform-nav{
+	transform: translateX(0);
 }
